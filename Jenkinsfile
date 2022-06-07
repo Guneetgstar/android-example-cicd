@@ -20,8 +20,7 @@ pipeline {
         GOOGLE_APPLICATION_CREDENTIALS = '/Users/Guneet/StudioProjects/MyApplication/my-application-df283-d006b2200276.json'
       }
       steps {
-        sh '''./gradlew bundleDebug appDistributionUploadDebug
-    --artifactType="APK"'''
+        sh './gradlew bundleDebug appDistributionUploadDebug --artifactType="APK"'
       }
     }
 
