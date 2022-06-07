@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1027776627089",
+    "project_id": "my-application-df283",
+    "storage_bucket": "my-application-df283.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027776627089:android:506fb8f19bb670c70f5a30",
+        "android_client_info": {
+          "package_name": "com.appinventiv.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027776627089-9m5p754oi2gfo9u3jik1kpjedmntlokc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC00ziz3B1ZiurUW5Q7ZUj7QTrfaKFAyAE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027776627089-9m5p754oi2gfo9u3jik1kpjedmntlokc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
