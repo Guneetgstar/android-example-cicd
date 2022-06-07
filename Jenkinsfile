@@ -17,7 +17,7 @@ pipeline {
 
     stage('Deploy') {
       environment {
-        GOOGLE_APPLICATION_CREDENTIALS = './my-application-df283-d006b2200276.json'
+        GOOGLE_APPLICATION_CREDENTIALS = '/Users/Guneet/StudioProjects/MyApplication/my-application-df283-d006b2200276.json'
       }
       steps {
         sh '''./gradlew bundleDebug appDistributionUploadDebug
