@@ -6,6 +6,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+        storeFile file('../keystore.pks')
+        storePassword '^Us&-u2!'
+        keyAlias 'Example'
+        keyPassword '^Us&-u2!'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
@@ -22,6 +30,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
             firebaseAppDistribution {
                 releaseNotes = "Test Notes"
                 serviceCredentialsFile = System.getenv("GOOGLE_APPLICATION_CREDENTIALS")
