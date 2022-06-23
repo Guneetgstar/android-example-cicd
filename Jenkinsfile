@@ -24,5 +24,11 @@ pipeline {
       }
     }
 
+    stage('Deploy on Playstore') {
+      steps {
+        androidApkUpload(googleCredentialsId: 'avishkar_google_play_key', trackName: 'internal-app-sharing')
+      }
+    }
+
   }
 }
