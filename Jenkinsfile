@@ -5,13 +5,13 @@ pipeline {
       steps {
         sh ''' chmod +x gradlew
 ./gradlew clean
-./gradlew assembleDebug'''
+./gradlew bundleRelease'''
       }
     }
 
     stage('Save the Artifact') {
       steps {
-        archiveArtifacts '**/*.apk'
+        archiveArtifacts '**/*.aab'
       }
     }
 
