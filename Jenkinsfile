@@ -16,8 +16,14 @@ pipeline {
     }
 
     stage('Deploy on Playstore') {
+       environment {
+          ANDROID_PUBLISHER_CREDENTIALS = """${sh(
+          returnStdout: true,
+          script: 'cat /Users/Guneet/StudioProjects/MyApplication/pc-api-6124060664771321122-615-00c14ec97d24.json'
+          )}"""
+      }
       steps {
-        androidApkUpload(googleCredentialsId: 'avishkar_google_play_key', trackName: 'internal-app-sharing')
+        sh '''./gradlew publishBundle'''
       }
     }
 
